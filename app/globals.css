@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; scroll-behavior: smooth; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #F8FAFC; color: #1E293B; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+section { scroll-margin-top: 96px; }
+.glass { background: rgba(255,255,255,.74); border: 1px solid rgba(255,255,255,.55); box-shadow: 0 20px 70px rgba(10,37,64,.10); backdrop-filter: blur(18px); }
+.dark-glass { background: rgba(10,37,64,.72); border: 1px solid rgba(148,216,255,.18); box-shadow: 0 24px 80px rgba(0,0,0,.22); backdrop-filter: blur(18px); }
+.gradient-text { background: linear-gradient(135deg, #0A2540 0%, #0f5f8f 42%, #38BDF8 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; scroll-behavior: auto !important; transition-duration: .01ms !important; } }
